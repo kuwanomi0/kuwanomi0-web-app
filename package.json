@@ -2,12 +2,30 @@
   "name": "blog-kuwanomi0",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "vitepress",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "lint": "textlint --format pretty-error src/**"
+  },
+  "dependencies": {
+    "@vue/repl": "^3.0.0",
+    "@vue/theme": "^2.2.5",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.9.0",
+    "vitepress": "1.0.0-rc.33",
+    "vue": "^3.4.0"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.40"
+    "@nexhome/yorkie": "^2.0.8",
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^20.10.1",
+    "lint-staged": "^12.3.2",
+    "terser": "^5.14.2",
+    "textlint": "^12.1.0",
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-preset-vuejs-jp": "github:vuejs-jp/textlint-rule-preset-vuejs-jp"
   }
 }
